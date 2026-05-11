@@ -1,0 +1,20 @@
+{
+  "name": "kanopi/nextjs",
+  "description": "A Next.js for Drupal site template recipe built on Canvas Code Components. Applies the ui recipe and layers in the decoupled bridge.",
+  "type": "drupal-recipe",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/kanopi/nextjs",
+  "repositories": [
+    { "type": "vcs", "url": "https://github.com/kanopi/next_canvas" }
+  ],
+  "require": {
+    "drupal/ui": "^1",
+    "kanopi/next_canvas": "^1 || dev-main",
+    "drupal/drupal_cms_authentication": "^2",
+    "drupal/drupal_cms_seo_basic": "^2",
+    "drupal/easy_email_express": "^1",
+    "drupal/next": "^2",
+    "drupal/decoupled_router": "^2",
+    "drupal/subrequests": "^3"
+  }
+}

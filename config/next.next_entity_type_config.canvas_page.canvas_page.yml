@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - canvas
+id: canvas_page.canvas_page
+site_resolver: site_selector
+configuration:
+  sites:
+    canvas_starter: canvas_starter
+draft_enabled: true
+revalidator: path
+revalidator_configuration:
+  revalidate_page: true
+  additional_paths: ''
