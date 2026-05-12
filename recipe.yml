@@ -1,12 +1,9 @@
-name: 'NextJS for Drupal Starter'
-description: 'A Next.js for Drupal site template. Applies the ui recipe (Canvas component library + home page + admin scaffolding) then layers in the decoupled bridge — next, jsonapi, decoupled_router, and the next_canvas custom module.'
+name: 'NextJS for Drupal'
+description: 'Adds a decoupled Next.js bridge on top of the ui recipe (shadcn/ui Canvas Code Components). Installs the next module + JSON:API + decoupled_router + subrequests + the next_canvas REST endpoints, and ships a default Next.js site connection. Pairs with the kanopi/drupal-canvas-nextjs front end.'
 type: Site
 
 recipes:
   - ui
-  - drupal_cms_authentication
-  - drupal_cms_seo_basic
-  - easy_email_express
 
 install:
   - next
@@ -22,14 +19,14 @@ config:
     next: '*'
 
 extra:
-  recipe_installer_kit:
-    finish_url: /admin/dashboard/welcome
   drupal_cms_installer:
-    creator: 'Chapter Three'
+    creator: 'Kanopi Studios'
     links:
-      - text: Documentation
+      - text: Front-end repo (drupal-canvas-nextjs)
+        url: 'https://github.com/kanopi/drupal-canvas-nextjs'
+      - text: UI recipe (drupal/ui)
+        url: 'https://www.drupal.org/project/ui'
+      - text: About Drupal Canvas
+        url: 'https://www.drupal.org/project/canvas'
+      - text: About Next.js for Drupal
         url: 'https://next-drupal.org'
-      - text: About Next.js
-        url: 'https://nextjs.org'
-      - text: Frontend repository
-        url: 'https://github.com/chapter-three/next-drupal'
