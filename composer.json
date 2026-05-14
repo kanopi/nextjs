@@ -5,13 +5,19 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://github.com/kanopi/nextjs",
   "repositories": [
-    { "type": "vcs", "url": "https://github.com/kanopi/next_canvas" }
+    { "type": "vcs", "url": "https://github.com/kanopi/next_canvas" },
+    { "type": "vcs", "url": "https://git.drupalcode.org/project/ui" }
   ],
   "require": {
     "drupal/ui": "^1",
-    "kanopi/next_canvas": "^1 || dev-main",
+    "kanopi/next_canvas": "^1",
     "drupal/next": "^2",
     "drupal/decoupled_router": "^2",
     "drupal/subrequests": "^3"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.x-dev"
+    }
   }
 }
